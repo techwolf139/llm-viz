@@ -524,7 +524,7 @@ const SpaceToContinueHint: React.FC<{
 
     return <div className={"absolute flex justify-center pointer-events-none top-0 left-0 right-0"} style={{ top, transform: `translateY(20px)` }}>
         <div className={"flex-shrink py-2 px-4 bg-blue-200 shadow-md rounded-3xl pointer-events-auto text-black cursor-pointer"} onClick={onClick}>
-             Press <span className={s.key}>Space</span> to continue
+             按 <span className={s.key}>空格</span> 继续
         </div>
     </div>;
 }
