@@ -19,21 +19,20 @@ export function walkthrough01_Prelim(args: IWalkthroughArgs) {
     setInitialCamera(state, new Vec3(184.744, 0.000, -636.820), new Vec3(296.000, 16.000, 13.500));
 
     let c0 = commentary(wt, null, 0)`
-Before we delve into the algorithm's intricacies, let's take a brief step back.
+在深入研究算法的复杂性之前，让我们先简单回顾一下。
 
-This guide focuses on _inference_, not training, and as such is only a small part of the entire machine-learning process.
-In our case, the model's weights have been pre-trained, and we use the inference process to generate output. This runs directly in your browser.
+本指南专注于_推理_，而非训练，因此只是整个机器学习过程的一小部分。
+在我们的案例中，模型的权重已经过预训练，我们使用推理过程来生成输出。这直接在您的浏览器中运行。
 
-The model showcased here is part of the GPT (generative pre-trained transformer) family, which can be described as a "context-based token predictor".
-OpenAI introduced this family in 2018, with notable members such as GPT-2, GPT-3, and GPT-3.5 Turbo, the latter being the foundation of the widely-used ChatGPT.
-It might also be related to GPT-4, but specific details remain unknown.
+这里展示的模型是 GPT（生成式预训练 transformer）家族的一部分，可以被描述为"基于上下文的 token 预测器"。
+OpenAI 在 2018 年推出了这个家族，其中著名的成员包括 GPT-2、GPT-3 和 GPT-3.5 Turbo，后者是广泛使用的 ChatGPT 的基础。
+它可能也与 GPT-4 相关，但具体细节尚不清楚。
 
-This guide was inspired by the ${embedLink('minGPT', minGptLink)} GitHub project, a minimal GPT implementation in ${embedLink('PyTorch', pytorchLink)}
-created by ${embedLink('Andrej Karpathy', andrejLink)}.
-His YouTube series ${embedLink("Neural Networks: Zero to Hero", zeroToHeroLink)} and the minGPT project have been invaluable resources in the creation of this
-guide. The toy model featured here is based on one found within the minGPT project.
+本指南的灵感来自 ${embedLink('minGPT', minGptLink)} GitHub 项目，这是一个用 ${embedLink('PyTorch', pytorchLink)} 实现的最小化 GPT，
+由 ${embedLink('Andrej Karpathy', andrejLink)} 创建。
+他的 YouTube 系列 ${embedLink("Neural Networks: Zero to Hero", zeroToHeroLink)} 和 minGPT 项目在本指南的创建过程中提供了宝贵的资源。这里展示的玩具模型基于 minGPT 项目中的一个模型。
 
-Alright, let's get started!
+好了，让我们开始吧！
 `;
 
 }

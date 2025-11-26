@@ -284,10 +284,10 @@ export const Commentary: React.FC = () => {
         </div>
         <div className={s.controls}>
             <button className={clsx(s.btn, "flex-[2] bg-blue-300 border border-blue-600 hover:bg-blue-400")} onClick={handleContinueClick}>
-                <div>Continue</div>
+                <div>继续</div>
             </button>
             <button className={clsx(s.btn, "ml-4 min-w-[100px] bg-white border border-blue-600 hover:bg-blue-200")} onClick={handleAdvanceClick}>
-                <div>Skip</div>
+                <div>跳过</div>
             </button>
         </div>
     </>;
