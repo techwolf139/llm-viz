@@ -46,6 +46,9 @@ export class CodeSuiteManager {
     }
 
     private async loadSuite(suite: ICodeSuite) {
+        if (typeof window === 'undefined') {
+            return;
+        }
         let basePath = (process.env.BASE_URL ?? '') + '/riscv/examples/';
         let resp = await fetch(basePath + suite.fileName);
 

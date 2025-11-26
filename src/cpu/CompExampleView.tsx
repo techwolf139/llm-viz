@@ -19,6 +19,9 @@ export const CompExampleView: React.FC = () => {
     let [reloadCntr, setReloadCntr] = useState(0);
 
     useEffect(() => {
+        if (typeof window === 'undefined') {
+            return;
+        }
         let basePath = (process.env.BASE_URL ?? '') + '/riscv/examples/';
 
         async function run() {
